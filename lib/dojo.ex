@@ -7,12 +7,13 @@ defmodule Dojo do
     String.split(str, "\n")
     # delete the last empty array element
      |> List.delete("")
-    # we make a list of lists of 3 elements
+    # a list of lists of 3 elements
      |> Enum.map(fn(x) ->
         String.codepoints(x)
         |> Enum.chunk(3)
       end)
-    # we make a list of lists of 3 elements
+    # suddenly, realize this is a matrix and it would be helpful
+    # to have transpose it and analyze each row as a single string
      |> transpose
     # apply the join, match and return as a single string
      |> analyze
