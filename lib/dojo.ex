@@ -42,6 +42,8 @@ defmodule Dojo do
     end
   end
 
+  # From stackoverflow
+  # http://stackoverflow.com/questions/23705074/is-there-a-transpose-function-in-elixir
   def transpose([[]|_]), do: []
   def transpose(a) do
     [Enum.map(a, &hd/1) | transpose(Enum.map(a, &tl/1))]
