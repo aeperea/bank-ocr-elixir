@@ -1,19 +1,7 @@
-# Dojo
-
-**TODO: Add description**
+# Bank OCR Kata
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
-
-  1. Add dojo to your list of dependencies in `mix.exs`:
-
-        def deps do
-          [{:dojo, "~> 0.0.1"}]
-        end
-
-  2. Ensure dojo is started before your application:
-
-        def application do
-          [applications: [:dojo]]
-        end
+= Load up lib/dojo.ex and check the .txt file with the entry values (entry.txt and entry_2.txt)
+= Run `Dojo.decode(filename)`
+= [Celebrate](https://youtu.be/3GwjfUFyY6M)
